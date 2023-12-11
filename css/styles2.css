@@ -301,6 +301,12 @@ button:hover {
     display: none;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -332,16 +338,16 @@ button:hover {
         margin-bottom: 10px;
     }
     /* Style specifies the display,justify-content,padding,flex-wrap,flex-direction and align-items to navbar-links class */
-    .navbar-links {
+    /* .navbar-links {
         display: flex;
         justify-content: space-evenly;
         padding: 10px 10px;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-    }
+    } */
     /* Style specifies the color,text-decoration,font-size,font-weight,line-height,background-color,border-radius,width,text-align and margin-bottom to anchor tag in navbar-links */
-    .navbar-links a {
+    /* .navbar-links a {
         color: #fff;
         text-decoration: none;
         font-size: 16px;
@@ -352,7 +358,7 @@ button:hover {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
-    }
+    } */
     /* For Navbar my acoount */
     #profile-container {
         width: 100%;
@@ -364,6 +370,30 @@ button:hover {
     }
     .mobileNav-specific {
         display: block;
+    }
+    .ls-page {
+        display: none;
+    }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        background-color: #f1f1f1;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .navbar-links a {
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 2;
+        padding: 10px 29px;
+    }
+    .hamburger {
+        display: inline-block;
+        color: #fff;
+        padding: 5%;
     }
 }
 
@@ -416,7 +446,43 @@ button:hover {
         font-size: 14px;
         padding: 0px 5px;
     }
+    .navbar-links {
+        display: flex !important;
+    }
     .mobileNav-specific {
+        display: block;
+    }
+    .ls-page {
+        display: none;
+    }
+}
+
+
+/* Styles for Footer till certain breakpoint to look fair*/
+
+@media all and (min-width:320px) and (max-width:652px) {
+    /* Styles specify display,flex-direction,align-items and justify-content to footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Style specifies the padding-bottom and text-align properties to footer-copyright class */
+    .footer-copyright {
+        padding-bottom: 1.5em;
+        text-align: center;
+    }
+    /* Style specifies the padding to footer-list-items class */
+    .footer-list-items {
+        padding: 0px 10px;
+    }
+    /* Style specifies the display property to ls-page class to hide in mobile layout */
+    .ls-page {
+        display: none;
+    }
+    /* Style specifies the display,width property to ls-page-mobile-tablet class to show in mobile layout */
+    .ls-page-mobile-tablet {
         display: block;
     }
 }
