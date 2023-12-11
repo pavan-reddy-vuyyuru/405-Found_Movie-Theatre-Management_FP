@@ -267,6 +267,37 @@ footer {
 }
 
 
+/* Style specifies the background color,padding,margin and border,cursor,width,border-radius,font-size,font-weight and text-decoration properties to active-button class */
+
+.active-button {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+/* Pseudo class for active-button class to change its opacity when its hover */
+
+.active-button:hover {
+    opacity: 0.8;
+}
+
+
+/* Style specifies the opacity for button */
+
+button:hover {
+    opacity: 0.8;
+}
+
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 

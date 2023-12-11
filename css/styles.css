@@ -1,1 +1,89 @@
 /* Styles goes here */
+
+
+/*------------------------------------------------------- Login Page CSS Starts Here ------------------------------------------------------------*/
+
+#login-form {
+    width: 50%;
+    top: 100px;
+    margin: 30px auto;
+}
+
+.form-container {
+    padding: 3rem;
+}
+
+#login-form {
+    border: 2px solid #000;
+    position: static;
+    border-radius: 25px;
+}
+
+.page-title {
+    margin: 0px auto;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=url],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=radio],
+input[type=checkbox] {
+    border: 1px solid #ccc;
+}
+
+span.psw {
+    float: right;
+}
+
+.button-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactive-button {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 20px;
+    margin-right: 20px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 25px;
+}
+
+.inactive-button:hover {
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+.button-group button.disable {
+    background-color: #eaeaea;
+    color: #555;
+}
