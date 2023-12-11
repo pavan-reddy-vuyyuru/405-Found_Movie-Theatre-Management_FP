@@ -297,6 +297,10 @@ button:hover {
     opacity: 0.8;
 }
 
+.mobileNav-specific {
+    display: none;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -349,6 +353,18 @@ button:hover {
         text-align: center;
         margin-bottom: 10px;
     }
+    /* For Navbar my acoount */
+    #profile-container {
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 0.5rem;
+    }
+    .mobileNav-specific {
+        display: block;
+    }
 }
 
 
@@ -399,5 +415,8 @@ button:hover {
     .navbar-links a {
         font-size: 14px;
         padding: 0px 5px;
+    }
+    .mobileNav-specific {
+        display: block;
     }
 }
