@@ -87,3 +87,369 @@ span.psw {
     background-color: #eaeaea;
     color: #555;
 }
+
+
+/*--------------------------------------------------------------- Trailer Page CSS starts -------------------------------------------------------*/
+
+
+/* Style specifies the border-bottom and padding-bottom properties to page-header class */
+
+.page-header {
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+}
+
+
+/* Style specifies the display property to trailer-list class */
+
+.trailers-list {
+    display: flex;
+}
+
+
+/* Style specifies the width and height to trailer-list-item class */
+
+.trailer-list-item {
+    width: 70%;
+    height: fit-content;
+}
+
+
+/* Style specifies the width and height to trailer-list-item-side class */
+
+.trailer-list-item-side {
+    width: 30%;
+    height: fit-content;
+}
+
+
+/*  Style specifies the padding to trailer-list-item-side class */
+
+.trailer-list-item-side {
+    padding: 50px 10px;
+}
+
+
+/*  Style specifies the padding to h3 within trailer-list-item-side class */
+
+.trailer-list-item-side h3 {
+    padding: 5px 10px
+}
+
+
+/*  Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
+
+.other-movie-list {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Style specifies the font-weight,font-size,padding,margin and text-align properties to p tag within other-movie-list class */
+
+.other-movie-list p {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1px 10px;
+    margin: 0px;
+    text-align: left;
+}
+
+
+/* ------------------------------------------------ Show_timings CSS Starts ----------------------------------------------------*/
+
+
+/* Style specifies the margin to top and bottom for the show-timings-container class*/
+
+.show_timings-container {
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+
+/* Style specifies the border, padding and border-radius to show_timings-container class in main */
+
+main .show_timings-container {
+    border: 1px solid #000;
+    padding: 1em 2em;
+    border-radius: 20px;
+}
+
+
+/* Style specifies the border, padding, margin bottom and border-radius to show-details-container class in main */
+
+main .show-details-container {
+    border: 1px solid #000;
+    padding: 2em 0em;
+    border-radius: 20px;
+    margin-bottom: 2em;
+}
+
+
+/* Style specifies the height,display and justify-content properties for show-list-container class */
+
+.show-list-container {
+    height: 20em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Style specifies the display ,padding top and height properties to image in show-list-container */
+
+.show-list-container img {
+    display: inline-block;
+    padding-top: 1em;
+    height: 100%;
+}
+
+
+/* Style specifies the width,margin to show_timings-container and show-details-container */
+
+.show_timings-container,
+.show-details-container {
+    width: 70%;
+    margin: 3em auto;
+}
+
+
+/* Style specifies the font-size and font-weight to para p tag in movie-title class */
+
+.movie-title p {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* Style specifies the list-style-type and font-size to movie-info class */
+
+.movie-info {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+
+/* Style specifies the padding left property to ordered list and unordered list items within movie-info class */
+
+.movie-info ul,
+.movie-info ol {
+    padding-left: 0em;
+}
+
+
+/* Style specifies the float property and height to movie-image class */
+
+.movie-image {
+    float: left;
+    height: 95%;
+}
+
+
+/* Style specifies the float property to movie-details class */
+
+.movie-details {
+    float: right;
+}
+
+
+/* Style specifies the width,padding,margin,display,box-sizing,color and text-transform and font-size properties to input element with type data  */
+
+input[type=date] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    box-sizing: border-box;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+/* Style Specifies the list-style-type,font-style,border-top and padding properties to list elements within movie-detail-synopsis class */
+
+.movie-detail-synopsis li {
+    list-style-type: none;
+    font-style: italic;
+    border-top: 1px solid #000;
+    padding: 5px;
+}
+
+
+/* Style specifies the margin-top property to movie-detail-synopsis class */
+
+.movie-detail-synopsis {
+    margin-top: 1em;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------Styles for Mobile Layout ------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media all and (min-width:320px) and (max-width:480px) {
+    /* Show Timings Page */
+    /* Style specifies the display property to ls-page class to hide in mobile layout */
+    /* .ls-page {
+        display: none;
+    } */
+    /* Style specifies the display property to ls-page-mobile-tablet class to show in mobile layout */
+    .ls-page-mobile-tablet {
+        display: block;
+    }
+    /* Style specifies the width and padding to main-container class */
+    .main-container {
+        width: 85% !important;
+        padding: 0.5em !important;
+    }
+    /* Style specifies the width,margin and padding to show_timings-container and show-details-container */
+    .show_timings-container,
+    .show-details-container {
+        width: 85% !important;
+        margin: 2em auto !important;
+        padding: 10px !important;
+    }
+    /* Style specifies the font-size to h1 tag present in show_timings container  */
+    .show_timings-container h1 {
+        font-size: 22px;
+    }
+    /* Style specifies the height to show-list-container class  */
+    .show-list-container {
+        height: fit-content !important;
+    }
+    /* Style specifies the display,flex-direction and align-items to show-list-container class  */
+    .show-list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Style specifies the text-align properties to movie-details class  */
+    .movie-details {
+        text-align: center;
+    }
+    /* Style specifies the font-size property to movie-info class  */
+    .movie-info {
+        font-size: 14px !important;
+    }
+    /* Style specifies the text-align,padding,font-size properties to unordered list in movie-detail-synopsis class  */
+    .movie-detail-synopsis li ul {
+        text-align: center;
+        padding: 1px;
+        font-size: 14px;
+    }
+    /* Style specifies the padding property to list in movie-detail-synopsis class  */
+    .movie-detail-synopsis li {
+        padding: 1em;
+    }
+    /* Trailers Page */
+    /* Style specifies the flex-direction,display properties to trailer-list class */
+    .trailers-list {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style specifies the width to trailer-list-item class */
+    .trailer-list-item {
+        width: 100%;
+    }
+    /* Style specifies the width and padding to trailer-list-item-side class */
+    .trailer-list-item-side {
+        width: 100%;
+        padding: 0px;
+    }
+    /* Style specifies the padding to h3 within trailer-list-item-side */
+    .trailer-list-item-side h3 {
+        padding: 0px;
+    }
+    /* Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
+    .other-movie-list {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* Style specifies the max-width,width and height to video element */
+    video {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------Styles for Tablet Layout ----------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media all and (min-width:481px) and (max-width:768px) {
+    /* Show Timings */
+    /* Style specifies the width property to main-container class */
+    .main-container {
+        width: 85% !important;
+    }
+    /* Style specifies the width,margin,padding properties to show_timings-container and show-details-container class */
+    .show_timings-container,
+    .show-details-container {
+        width: 85% !important;
+        margin: 2em auto !important;
+        padding: 10px !important;
+    }
+    /* Style specifies the font-size property to h1 tag in show_timings container */
+    .show_timings-container h1 {
+        font-size: 22px;
+    }
+    /* Style specifies the height for show-list-container class */
+    .show-list-container {
+        height: fit-content !important;
+    }
+    /* Style specifies the display,flex-direction and align-items properties to show-list-container class */
+    .show-list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Style specifies the text-align property to movie-details class */
+    .movie-details {
+        text-align: center;
+    }
+    /* Style specifies the text-align property and padding to unordered list items in li within movie-detail-synopsis class */
+    .movie-detail-synopsis li ul {
+        text-align: center;
+        padding: 1px;
+    }
+    /* Style specifies the padding to list items li within movie-detail-synopsis */
+    .movie-detail-synopsis li {
+        padding: 1em;
+    }
+    /* Trailers Page */
+    /* Style specifies the display and flex-direction properties to trailer-list class */
+    .trailers-list {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style specifies the width property to trailer-list-item class */
+    .trailer-list-item {
+        width: 100%;
+    }
+    /* Style specifies the width and padding to trailer-list-item-side class */
+    .trailer-list-item-side {
+        width: 100%;
+        padding: 0px;
+    }
+    /* Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
+    .other-movie-list {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
