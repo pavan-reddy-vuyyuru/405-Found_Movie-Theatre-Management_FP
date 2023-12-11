@@ -40,7 +40,28 @@ Date : 24 Oct 2023 -->
 
         <!-- Use the main area to add the main content of the webpage -->
         <main>
+            <div class="main-container">
+                <form>
+                    <div class="form-container">
+                        <h1 class="page-title">Log In</h1>
+                        <hr>
+                        <label for="username"><b>Email</b></label>
+                        <input type="text" id="username" placeholder="Enter Username" name="uname" required>
 
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+                        <div style="display: block;font-style: italic;">
+                            <output style="color: red;" name="result"></output>
+                        </div>
+                        <input type="submit" class="active-button" value="Login" />
+
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+
+
+                    </div>
+                </form>
+            </div>
         </main>
         <!-- Use the footer area to add webpage footer content -->
         <footer class="footer-site">
