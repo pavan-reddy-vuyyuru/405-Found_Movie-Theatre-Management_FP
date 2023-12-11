@@ -1,1 +1,372 @@
-/*Common Styles goes here */
+/* Common Styles goes here for header Nav and Footer Goes here*/
+
+
+/* Authors : Venkata Sandeep Reddy Sabbella
+             Pavan Kumar Reddy Vuyyuru
+             Rithvik Varma Thotakura
+             Rajesh Jyoti Samrat
+*/
+
+
+/* Styles for whole web page which contains font-family and box-sizing(width & height of element calculated) */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Styles for body element with margin and background color for webpage */
+
+body {
+    margin: 0px;
+    background-color: #000;
+}
+
+
+/* Styles for header schematic element with background-color,height,width and position is fixed at 0px */
+
+header {
+    background-color: #000;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+
+/* Style specifies width for container */
+
+#container {
+    width: 100%;
+}
+
+
+/* Style for header element that specifies display and align elements to the center vertically */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Style specifies the height, max-width and padding to the left to header-logo class for logo present in header */
+
+.header-logo {
+    height: 100%;
+    max-width: 20%;
+    padding-left: 0.5em;
+}
+
+
+/* Style for logo-image in header that specifies height to that element */
+
+.logo-image {
+    height: 100%;
+}
+
+
+/* Style specifies the color,letter-spacing,font-style width and padding to site-title class which is title of our page title in header  */
+
+.site-title {
+    color: #fff;
+    letter-spacing: 3.25px;
+    padding: 8px;
+    width: 60%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Style for home-link class with text decoration and color properties */
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Style rules for pseudo-classes of home-link*/
+
+.home-link:hover,
+.home-link:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Style specifies max-width,padding,display and align items for ls-page which container sign in link in header */
+
+.ls-page {
+    max-width: 20%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Style specifies text decoration,font-size,color and font-weight for link in ls-page class */
+
+.ls-page a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* Style specifies display and align items to link present in ls-class */
+
+.ls-page a {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Style specifies the height of image present in header ls-page class */
+
+.svg-icons {
+    height: 35px;
+}
+
+
+/* Style specifies the height,top,position and background color for navbar */
+
+.navbar {
+    height: fit-content;
+    top: 100px;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+
+/* Styles of links present in navbar-links class that specifies padding to right and left of 30px each */
+
+.navbar-links a {
+    padding: 0px 30px;
+}
+
+
+/* Styles for links present in navbar-links with properties color,text-decoration,font-size,font-weight and line-height for each link */
+
+.navbar-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+
+/* Styles for pseudo class links in navbar-links */
+
+.navbar-links a:hover {
+    outline: 2px solid #000;
+    outline: 2px solid #000;
+}
+
+
+/* Styles for navbar-links class that specifies display and padding and justify-content in flex */
+
+.navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+/* Style specifies the top,position,width,margin,background color,border-radius and padding for main-container class */
+
+.main-container {
+    top: 100px;
+    width: 80%;
+    margin: 3em auto;
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+
+/* Style specifies the background color ,width,position and bottom pixel for footer */
+
+footer {
+    background-color: #000;
+    bottom: 0px;
+    width: 100%;
+    position: relative;
+}
+
+
+/* Styles for footer with properties display,justifying content,padding,align-items and height ,border at top and some margin at top to footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
+    border-top: 0.2px solid #f1f1f1;
+    margin-top: 10em;
+}
+
+
+/* Style for footer-link-list class that specifies the list-style-type and align items and display to that list elements */
+
+.footer-link-list {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Styles to list elements with class footer-list-items that has padding property */
+
+.footer-list-items {
+    padding: 0px 20px;
+}
+
+
+/* Style specifies the color and text-decoration property for footer-links class */
+
+.footer-links {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Style for footer-links pseudo class */
+
+.footer-links:hover {
+    cursor: pointer;
+}
+
+
+/* Styles specifies the color and cursor for footer-copyright text */
+
+.footer-copyright {
+    color: #fff;
+    cursor: text;
+}
+
+
+/* Style specifies the z-index and max-width for header and footer */
+
+header,
+footer {
+    z-index: 1;
+    max-width: 100%;
+}
+
+
+/* Style for ls-page-mobile-tablet element that need to hide in desktop */
+
+.ls-page-mobile-tablet {
+    display: none;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------Styles for Mobile Layout ------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media all and (min-width:320px) and (max-width:480px) {
+    /* Style specifies the display property to header-logo class to hide in mobile breakdown points  */
+    .header-logo {
+        display: none;
+    }
+    /* Style specifies the width property to site-title class */
+    .site-title {
+        width: 90%;
+    }
+    /* Style specifies the display,align-items and justify-content properties to header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /* Style specifies the font-size,margin-top and margin-bottom to header class */
+    .header {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* Style specifies the display,justify-content,padding,flex-wrap,flex-direction and align-items to navbar-links class */
+    .navbar-links {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Style specifies the color,text-decoration,font-size,font-weight,line-height,background-color,border-radius,width,text-align and margin-bottom to anchor tag in navbar-links */
+    .navbar-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 3;
+        background-color: #000;
+        border-radius: 20px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------Styles for Tablet Layout ----------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media all and (min-width:481px) and (max-width:768px) {
+    /* Style specifies the height,max-width and padding-left to header-logo class */
+    .header-logo {
+        height: 100%;
+        max-width: 20%;
+        padding-left: 0em;
+    }
+    /* Style specifies the height and max-width to logo-image class */
+    .logo-image {
+        height: 90%;
+        max-width: 100%;
+    }
+    /* Style specifies the display property to ls-page class to hide in mobile layout */
+    .ls-page {
+        display: none;
+    }
+    /* Style specifies the display,width property to ls-page-mobile-tablet class to show in mobile layout */
+    .ls-page-mobile-tablet {
+        display: block;
+        width: 10%;
+    }
+    /* Style specifies the letter-spacing,width,font-size and padding to site-title class */
+    .site-title {
+        letter-spacing: 1.25px;
+        width: 70%;
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+    /* Style specifies the display,align-items,height and max-width properties to header element */
+    header {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        max-width: 100%;
+    }
+    /* Style specifies the font-size and padding to anchor tags in navbar-links class */
+    .navbar-links a {
+        font-size: 14px;
+        padding: 0px 5px;
+    }
+}
