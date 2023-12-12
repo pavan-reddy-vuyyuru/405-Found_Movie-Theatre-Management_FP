@@ -728,6 +728,14 @@ input[type=checkbox]:checked:before {
     border: none;
 }
 
+.check {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -746,6 +754,12 @@ input[type=checkbox]:checked:before {
     /* Style specifies the display property to ls-page-mobile-tablet class to show in mobile layout */
     .ls-page-mobile-tablet {
         display: block;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .check {
+        display: none;
     }
     /* Style specifies the width and padding to main-container class */
     .main-container {
@@ -895,5 +909,11 @@ input[type=checkbox]:checked:before {
         padding: 10px;
         align-items: center;
         flex-direction: column;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .check {
+        display: none;
     }
 }

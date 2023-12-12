@@ -71,7 +71,7 @@
                                     <td colspan="14">
                                         <div class="screen">SCREEN</div>
                                     </td>
-                                    <td rowspan="20">
+                                    <td rowspan="20" class="check">
                                         <div class="smallBox greenBox">Selected Seat</div> <br/>
                                         <div class="smallBox redBox">Reserved Seat</div><br/>
                                         <div class="smallBox emptyBox">Empty Seat</div><br/>
@@ -265,7 +265,15 @@
                                     <td><input type="checkbox" class="seats" value="J11"></td>
                                     <td><input type="checkbox" class="seats" value="J12"></td>
                                 </tr>
+                                <tr>
+                                    <div class="mobile-only">
+                                        <div class="smallBox greenBox">Selected Seat</div> <br/>
+                                        <div class="smallBox redBox">Reserved Seat</div><br/>
+                                        <div class="smallBox emptyBox">Empty Seat</div><br/>
+                                    </div>
+                                </tr>
                             </table>
+
                             <br/>
                             <button class="active-button" onclick="updateTextArea()">Confirm Selection</button>
                         </div>
