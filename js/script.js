@@ -67,6 +67,33 @@ function updateTextArea() {
         document.getElementById('NumberDisplay').innerHTML = allNumberVals;
         document.getElementById('seatsDisplay').innerHTML = allSeatsVals;
         document.getElementById('costDisplay').innerHTML = allNumberVals * ticketPrice;
+
+
+        var storedName = localStorage.getItem('nameDisplay');
+        var storedNumber = localStorage.getItem('NumberDisplay');
+        var storedSeats = localStorage.getItem('seatsDisplay');
+        var storedCost = localStorage.getItem('costDisplay');
+
+
+        if (storedName !== null) {
+
+            console.log('Name:', storedName);
+        }
+
+        if (storedNumber !== null) {
+
+            console.log('Number:', storedNumber);
+        }
+
+        if (storedSeats !== null) {
+
+            console.log('Seats:', storedSeats);
+        }
+
+        if (storedCost !== null) {
+
+            console.log('Cost:', storedCost);
+        }
     } else {
         alert("Please select " + numSeatsValue + " seats");
     }
