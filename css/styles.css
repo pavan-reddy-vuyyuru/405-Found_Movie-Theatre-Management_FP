@@ -614,7 +614,7 @@ input[type=number] {
 }
 
 .smallBox::before {
-    content: ".";
+    content: "";
     width: 15px;
     height: 15px;
     float: left;
