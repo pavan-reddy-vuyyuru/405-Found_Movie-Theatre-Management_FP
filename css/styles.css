@@ -685,6 +685,47 @@ td {
         width: 100%;
         height: 100%;
     }
+    /* Home Page */
+    /* Style specifies the width to card class */
+    .card {
+        width: 75%;
+    }
+    /* Style specifies the width to offer class */
+    .offer {
+        width: 90%;
+    }
+    /* Style specifies the text-align property to p tag in content2 class */
+    .content2 p {
+        text-align: center;
+    }
+    /* Contact Us Page */
+    /* Style specifies the display,width,margin and flex-wrap to outer-div class */
+    .outer-div {
+        display: flex;
+        width: 90%;
+        margin: 0px auto;
+        flex-wrap: wrap;
+    }
+    /* Style specifies the width and margin property to map-div class */
+    .map-div {
+        width: 100% !important;
+        margin: 0px auto;
+    }
+    /* Style specifies the width and padding and margin-top to contact form div */
+    .contact-form-div {
+        width: 100% !important;
+        padding: 20px 3px !important;
+        margin-top: 1em;
+    }
+    /* Style specifies the text-align and margin-top property to h1 tag within hours-of-operation id */
+    #hours-of-operation-h1 {
+        text-align: center;
+        margin-top: 1em !important;
+    }
+    /* Style specifies the width to operation-table class */
+    .operations-table {
+        width: 90% !important;
+    }
 }
 
 
@@ -757,5 +798,33 @@ td {
         padding: 10px;
         align-items: center;
         flex-direction: column;
+    }
+    /* Contact Us page */
+    /* Style for outer-div class that specifies the display,width,margin and flex-wrap properties */
+    .outer-div {
+        display: flex;
+        width: 90%;
+        margin: 0px auto;
+        flex-wrap: wrap;
+    }
+    /* Style specifies the width and margin properties to map-div class */
+    .map-div {
+        width: 100% !important;
+        margin: 0px auto;
+    }
+    /* Style specifies the width,padding and margin-top properties to contact-form-div class */
+    .contact-form-div {
+        width: 100% !important;
+        padding: 20px 3px !important;
+        margin-top: 1em;
+    }
+    /* Style specifies the text-align and margin-top properties to hours-of-operation-h1 id */
+    #hours-of-operation-h1 {
+        text-align: center;
+        margin-top: 1em !important;
+    }
+    /* Style specifies the width property to operation-table class */
+    .operations-table {
+        width: 90% !important;
     }
 }
