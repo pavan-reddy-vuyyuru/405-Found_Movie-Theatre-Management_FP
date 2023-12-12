@@ -52,7 +52,85 @@
         <!-- Use the main area to add the main content of the webpage -->
         <main>
             <div class="main-container">
+                <h1 class="page-header">Contact Us :</h1>
+                <div class="outer-div">
+                    <div class="map-div">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.8685475843135!2d-79.34416312411112!3d43.77558747109657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d366a62bdef1%3A0xed992a4efafde0c0!2s123%20Parkway%20Forest%20Dr%2C%20North%20York%2C%20ON%20M2J%200G1!5e0!3m2!1sen!2sca!4v1689612006064!5m2!1sen!2sca"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+                    </div>
+                    <div class="contact-form-div">
+                        <h1 id="contact-form-h1">Feedback Form</h1>
+                        <form class="contact-form" id="myForm" oninput="updateProgressBar()">
+                            <progress id="progressBar" value="0" max="100"></progress><br>
+                            <label for="first_name">First Name :</label>
+                            <input type="text" name="first_name" id="first_name" class="contact-form-text" placeholder="First Name" required>
+                            <label for="last_name">Last Name :</label>
+                            <input type="text" name="last_name" id="last_name" class="contact-form-text" placeholder="Last Name" required>
+                            <label for="email">E-mail :</label>
+                            <input type="email" name="email" id="email" class="contact-form-text" placeholder="E-mail" required>
+                            <label for="url">URL or Website :</label>
+                            <input type="url" name="url" id="url" class="contact-form-text" name="url" placeholder="ex: www.johnwick.com" required>
+                            <label for="mobile_number">Mobile Number :</label>
+                            <input type="tel" name="mobile_number" id="mobile_number" class="contact-form-text" placeholder="Mobile Number" required>
+                            <label for="dob">Date of Birth :</label>
+                            <input type="date" id="dob" name="dob" class="contact-form-text" placeholder="dd/mm/yyyy" required>
+                            <br>
+                            <label>Select Gender:</label><br>
+                            <div style="display: inline-flex;">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                            <br>
+                            <div style="display: -webkit-inline-box;">
+                                <input type="checkbox" id="confirm" name="confirm" required>
+                                <label for="confirm">I hereby providing the data with my own consent and not fictitious.</label>
+                            </div><br>
+                            <br>
+                            <div style="display: flex;width: 100%;align-items: center;justify-content: space-around;">
+                                <button type="button" style="width: 40%;" class="active-button" onclick="clearForm()">Clear All</button>
+                                <input type="submit" style="width: 40%;" class="active-button" value="SEND" name="button" onclick="storeFormData()" id="button">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <table class="operations-table">
+                    <caption>Hours of Operation</caption>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>9:00 AM to 12:00 PM</td>
+                    </tr>
+                </table>
             </div>
         </main>
         <!-- Use the footer area to add webpage footer content -->
