@@ -76,7 +76,7 @@ function updateTextArea() {
 
 
         if (storedName !== null) {
-
+            console.log("Name");
             console.log('Name:', storedName);
         }
 
