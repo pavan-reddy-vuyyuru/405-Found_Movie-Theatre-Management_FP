@@ -747,10 +747,6 @@ input[type=checkbox]:checked:before {
 
 @media all and (min-width:320px) and (max-width:480px) {
     /* Show Timings Page */
-    /* Style specifies the display property to ls-page class to hide in mobile layout */
-    /* .ls-page {
-        display: none;
-    } */
     /* Style specifies the display property to ls-page-mobile-tablet class to show in mobile layout */
     .ls-page-mobile-tablet {
         display: block;
