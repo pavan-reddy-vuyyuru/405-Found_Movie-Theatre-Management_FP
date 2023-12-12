@@ -453,3 +453,166 @@ input[type=date] {
         flex-direction: column;
     }
 }
+
+/*-------------------------------------------------------- index.html Home Page CSS starts -------------------------------------------------------------*/
+
+
+/* Style specifies the display,justify-content,margin-top,align-items,flex-wrap properties for now-playing-container class in home page */
+
+.now-playing-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Style specifies the background-color,border-radius,margin and padding to card class in home page */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+
+/* Style specifies the width,height and border-radius for image in card class */
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Style specifies the padding for content class  */
+
+.content {
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 8px;
+}
+
+
+/*  Style specifies the color,font-size,font-weight,text-align,margin,text overflow and whitespace properties to content-text class in card container */
+
+.content-text {
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+/* Style specifies the color,font-size,font-style,text-align and font-weight properties for p tag in content class */
+
+.content p {
+    color: black;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+/* Style specifies the text-decoration,text-align,padding and display and border-radius properties to anchor tag in content class  */
+
+.content a {
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* Pseudo class for a tag in content class */
+
+.content a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+/* Style specifies the margin to top and color of h1 tag in main element */
+
+main h1 {
+    margin-top: 20px;
+    color: #000;
+}
+
+
+/* Style specifies the height and width of slider class  */
+
+.slider {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Style specifies the width,max-width and height and border radius fpr img tag in slider class this properties are used for banner   */
+
+.slider img {
+    max-width: 100%;
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Style specifies the margin,background color,text-align,padding and border-radius for offer class */
+
+.offer {
+    background-color: #000;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 1px;
+}
+
+
+/* Style specifies the color to h2 tag in offer container  */
+
+.offer h2 {
+    color: white;
+}
+
+
+/* Style specifies the margin,width and border-radius for movie-news card class */
+
+.movie-news-card {
+    width: 300px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+
+/* Style specifies the width,height and border-radius for image element in movie-news-card class */
+
+.movie-news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Style specifies the padding to class"content2" */
+
+.content2 {
+    padding: 4px 4px 4px 4px;
+}
+
+
+/* Style specifies the font-size,font-weight,color to p tag(para) in content2 class */
+
+.content2 p {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
