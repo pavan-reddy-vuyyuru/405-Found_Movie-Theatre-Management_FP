@@ -63,11 +63,10 @@ function updateTextArea() {
             allSeatsVals.push(element.value);
         });
 
-        document.getElementById('nameDisplay').innerHTML = allNameVals;
-        document.getElementById('NumberDisplay').innerHTML = allNumberVals;
-        document.getElementById('seatsDisplay').innerHTML = allSeatsVals;
-        document.getElementById('costDisplay').innerHTML = allNumberVals * ticketPrice;
-
+        localStorage.setItem('nameDisplay', allNameVals);
+        localStorage.setItem('NumberDisplay', allNumberVals);
+        localStorage.setItem('seatsDisplay', allSeatsVals);
+        localStorage.setItem('costDisplay', allNumberVals * ticketPrice);
 
         var storedName = localStorage.getItem('nameDisplay');
         var storedNumber = localStorage.getItem('NumberDisplay');
@@ -76,7 +75,6 @@ function updateTextArea() {
 
 
         if (storedName !== null) {
-            console.log("Name");
             console.log('Name:', storedName);
         }
 
@@ -94,6 +92,11 @@ function updateTextArea() {
 
             console.log('Cost:', storedCost);
         }
+        document.getElementById('nameDisplay').innerHTML = allNameVals;
+        document.getElementById('NumberDisplay').innerHTML = allNumberVals;
+        document.getElementById('seatsDisplay').innerHTML = allSeatsVals;
+        document.getElementById('costDisplay').innerHTML = allNumberVals * ticketPrice;
+
     } else {
         alert("Please select " + numSeatsValue + " seats");
     }
