@@ -448,6 +448,148 @@ main h1 {
     color: black;
 }
 
+/*----------------------------------------------------- Contact Us Page CSS starts ------------------------------------------------------*/
+
+
+/* Style specifies the width and padding tp content-form-div class */
+
+.contact-form-div {
+    width: 60%;
+    padding: 20px;
+}
+
+
+/* Style specifies the text-align properties and margin to content form-h1 id  */
+
+#contact-form-h1 {
+    text-align: center;
+    margin: 0px auto 20px auto;
+}
+
+
+/* Style specifies teh padding,margin and max-width properties to contact form class */
+
+.contact-form {
+    max-width: 95%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+
+/* Style specifies the display,width,margin ,border-radius and width to contact-form-text class */
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+/* Style specifies box-shadow the pseudo class for contact form text class */
+
+.contact-form-text:hover {
+    box-shadow: 0 0 15px 2px black;
+}
+
+
+/* Style specifies the resize and height for contact-form-ta id */
+
+#contact-form-ta {
+    resize: none;
+    height: 100px;
+}
+
+
+/* Style specifies the width and margin properties for .map-div class */
+
+.map-div {
+    width: 60%;
+    margin: 0px auto;
+}
+
+
+/* Style specifies the width and height for map class */
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Style specifies the display width and margin properties for outer-div class */
+
+.outer-div {
+    display: flex;
+    width: 85%;
+    margin: 0px auto;
+}
+
+
+/* Style specifies the border-collapse,width,margin and border for operation-table class */
+
+.operations-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 40px auto;
+    border: 1px solid #dddddd;
+}
+
+
+/* Style specifies the padding and text-align properties to table head and table data tags in operation-table class */
+
+.operations-table td,
+.operations-table th {
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* Style specifies the text-align, background color and text color fpr table header in .operations-table */
+
+.operations-table th {
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+
+/* Style specifies the text-align,font-size,font-weight and padding to caption of table */
+
+caption {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    padding: 1em;
+}
+
+
+/* Style specifies the border left and border-bottom to table header th and table data td of table */
+
+th,
+td {
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+#progressBar {
+    width: 98%;
+}
+
+#progressBar::-webkit-progress-value {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+#progressBar ::-webkit-progress-value {
+    background-color: #4CAF50;
+}
+
+#progressBar::-moz-progress-bar {
+    background-color: #4CAF50;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
