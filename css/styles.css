@@ -448,6 +448,7 @@ main h1 {
     color: black;
 }
 
+
 /*----------------------------------------------------- Contact Us Page CSS starts ------------------------------------------------------*/
 
 
@@ -721,6 +722,10 @@ input[type=checkbox]:checked:before {
     padding: 10px;
     border: 1px solid red;
     background-color: red;
+}
+
+#seatsBlock tbody tr td {
+    border: none;
 }
 
 
