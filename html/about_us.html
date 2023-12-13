@@ -54,7 +54,41 @@
         <main>
             <div>
                 <div class="main-container">
+                    <h1 class="page-header">About Us :</h1>
+                    <div class="mission">
+                        <h2>Our Mission :</h2>
+                        <div class="mission-block">
+                            <div style="max-width: 30%;">
+                                <img src="../img/mission.png" alt="mission-image" class="mission-image">
+                            </div>
+                            <div>
+                                <p>We at <strong> Toronto Movie Chain </strong> work hard to earn the trust of movie buffs like you that allows users to book tickets for movies online. It offers various features and benefits to both customers and movie theaters.
+                                    No matter if you're a casual watcher or a die-hard cinephile, our website provides insightful information and useful resources about movie and ticket bookings experience. You may easily access a plethora of knowledge
+                                    on your preferred movies, actors, directors, and genres.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="what-we-offer">
+                        <h2>What we offer :</h2>
+                        <ul>
+                            <li>A big collection of movies from different genres.</li>
+                            <li>Movie trailers, reviews and upcoming releases.</li>
+                            <li>Users can search for movies to watch after logging in. They are able to search through a list of movies and filter them by region, language, release date, and genre.</li>
+                            <li>Users may check the showtime and seat availability in real-time, which helps them plan their movie outings.</li>
+                            <li>Many booking websites offer promotional deals, discounts, and loyalty programs, enabling users to save money on ticket purchases.</li>
+                        </ul>
+                    </div>
 
+                    <div class="contact-us-block">
+                        <h2>Any Quires :</h2>
+                        <p>If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. We'd love to hear from you!</p>
+                        <p><b>Email : </b>
+                            <a href="mailto:info@movietheatremanagement.com"><em>info@movietheatremanagement.com</em></a>
+                        </p>
+                        <p><b>Phone : </b>
+                            <a href="tel: +1 1111111111"><em>+1 (123)-123-1234</em></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -72,5 +106,19 @@
         </footer>
     </div>
 </body>
+<script>
+    function toggleNavbar() {
+        const navbarLinks = document.querySelector('.navbar-links');
+        navbarLinks.style.display = navbarLinks.style.display === 'flex' ? 'none' : 'flex';
+    }
+    const registeredUser = window.localStorage.getItem("exampleLogin__firstname");
+    window.addEventListener('DOMContentLoaded', displayName)
+
+    function displayName() {
+        var usernameDisplay = document.getElementById('usernameDisplay');
+        usernameDisplay.innerHTML = `${registeredUser}`;
+
+    };
+</script>
 
 </html>
