@@ -51,7 +51,25 @@
         <!-- Use the main area to add the main content of the webpage -->
         <main>
             <div class="main-container">
+                <h1 class="page-header">Profile :</h1>
+                <div id="profile-container">
+                    <div id="profile-photo">
+                        <img src="../img/batman.jpg" alt="Profile Photo">
+                    </div>
+                    <div id="profile-details">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" readonly>
 
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" readonly>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" readonly>
+
+                        <button onclick="changePassword()">Change Password</button>
+                        <button onclick="signOut()">Sign Out</button>
+                    </div>
+                </div>
             </div>
         </main>
         <!-- Use the footer area to add webpage footer content -->
@@ -68,5 +86,19 @@
         </footer>
     </div>
 </body>
+<script>
+    function toggleNavbar() {
+        const navbarLinks = document.querySelector('.navbar-links');
+        navbarLinks.style.display = navbarLinks.style.display === 'flex' ? 'none' : 'flex';
+    }
+    const registeredUser = window.localStorage.getItem("exampleLogin__firstname");
+    window.addEventListener('DOMContentLoaded', displayName)
+
+    function displayName() {
+        var usernameDisplay = document.getElementById('usernameDisplay');
+        usernameDisplay.innerHTML = `${registeredUser}`;
+
+    };
+</script>
 
 </html>
