@@ -1245,4 +1245,21 @@ main .in-up-coming input {
         letter-spacing: 0.25px;
         padding: 0% 3%;
     }
+
+    /* Upcoming movies */
+    /* Style specifies the display and flex-direction properties to in-up-coming class */
+    .in-up-coming {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style specifies the text-align and width properties to up-coming-details class*/
+    .up-coming-details {
+        text-align: center;
+        width: 90%;
+    }
+    /* Style specifies the display and flex-direction properties to in-up id */
+    #in-up {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
