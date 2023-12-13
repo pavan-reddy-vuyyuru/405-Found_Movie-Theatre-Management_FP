@@ -99,21 +99,7 @@
         </footer>
     </div>
 </body>
-<!-- Use this code in all pages so that you will get the first name on top in header else its returning void or empty and mobile nav wont work ... -->
-<script>
-    function toggleNavbar() {
-        const navbarLinks = document.querySelector('.navbar-links');
-        navbarLinks.style.display = navbarLinks.style.display === 'flex' ? 'none' : 'flex';
-    }
-    const registeredUser = window.localStorage.getItem("exampleLogin__firstname");
-    window.addEventListener('DOMContentLoaded', displayName)
-
-    function displayName() {
-        var usernameDisplay = document.getElementById('usernameDisplay');
-        usernameDisplay.innerHTML = `${registeredUser}`;
-
-    };
-</script>
+<script src="../js/index.js"></script>
 
 
 </html>
