@@ -736,6 +736,100 @@ input[type=checkbox]:checked:before {
     display: none;
 }
 
+/* ------------------------------------------------------- About US page CSS starts ------------------------------------------------------- */
+
+
+/* Style specifies the max-width,margin to left and right for container class  */
+
+.container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Style specifies the font-size and margin to left and right to mission,offer and contact_us classes */
+
+.mission,
+.offer,
+.contact_us {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Style specifies the margin-top,font-style to h2 tag within mission,what-we-offer and contact-us-block */
+
+.mission h2,
+.what-we-offer h2,
+.contact-us-block h2 {
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+
+/* Style specifies the padding left to unordered list items within what-we-offer class */
+
+.what-we-offer ul {
+    padding-left: 4%;
+}
+
+
+/* Style specifies the display,flex-direction,align-items,justify content and padding properties to mission-block */
+
+.mission-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Style specifies the max-width property to div within mission-block class */
+
+.mission-block div {
+    max-width: 70%;
+}
+
+
+/* Style specifies the line-height,font-size,text-align and margin-top to p tag within div which is within mission-block class */
+
+.mission-block div p {
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+/* Style specifies the max-width,margin and display properties to image tag within div which is within mission-block class */
+
+.mission-block div img {
+    max-width: 40%;
+    margin: 0px auto;
+    display: block;
+}
+
+
+/* Style for list items within what-we-offer class with properties font-size,line-height,letter-spacing properties */
+
+.what-we-offer li {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.25px;
+}
+
+
+/* Style specifies the font-size,letter-spacing and padding to p tag within contact-us-block class */
+
+.contact-us-block p {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    padding: 0% 1%;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
