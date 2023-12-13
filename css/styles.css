@@ -831,6 +831,30 @@ input[type=checkbox]:checked:before {
     padding: 0% 1%;
 }
 
+/*------------------------------------------------------------ Terms and Conditions Page ---------------------------------------------------*/
+
+
+/* Style specifies the font-size,letter-spacing to terms-para class */
+
+.terms-para {
+    letter-spacing: 0.25px;
+    font-size: 16px;
+}
+
+
+/* Style specifies the line-height to t-c-list class */
+
+.t-c-list {
+    line-height: 1.4;
+}
+
+
+/* Style specifies the margin to list items within t-c-list class */
+
+.t-c-list li {
+    margin: 15px auto;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 
