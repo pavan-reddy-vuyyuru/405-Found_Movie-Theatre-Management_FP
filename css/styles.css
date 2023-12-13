@@ -1108,4 +1108,35 @@ input[type=checkbox]:checked:before {
     .check {
         display: none;
     }
+
+    /* About US page */
+    /* Style specifies the display,flex-direction,align-items and padding properties to mission-block class */
+    .mission-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    /* Style specifies the max-width property to div elements within mission-block */
+    .mission-block div {
+        max-width: 95% !important;
+    }
+    /* Style specifies the max-width property to img element inside div elements within mission-block */
+    .mission-block div img {
+        max-width: 30%;
+    }
+    /* Style specifies the margin-top property to p elements inside div elements within mission-block */
+    .mission-block div p {
+        margin-top: 20px;
+    }
+    /* Style specifies the padding-left to unordered list items within what-we-offer class */
+    .what-we-offer ul {
+        padding-left: 6%;
+    }
+    /* Style specifies the font-size,letter-spacing and padding properties to contact-us-block class */
+    .contact-us-block p {
+        font-size: 18px;
+        letter-spacing: 0.25px;
+        padding: 0% 3%;
+    }
 }
