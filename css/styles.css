@@ -1156,6 +1156,18 @@ button:hover {
         flex-direction: column-reverse;
     }
 
+    #profile-container {
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 0.5rem;
+    }
+    .mobileNav-specific {
+        display: block;
+    }
+
 }
 
 
@@ -1310,5 +1322,9 @@ button:hover {
     #in-up {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .mobileNav-specific {
+        display: block;
     }
 }
