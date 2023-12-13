@@ -908,6 +908,7 @@ button:hover {
         padding: 15px;
         border-radius: 25px;
         text-decoration: none;
+        touch-action: manipulation;
     }
     .desktop-only {
         display: none;
@@ -949,6 +950,130 @@ button:hover {
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media all and (min-width:481px) and (max-width:768px) {
+    /* Show Timings */
+    .main-container {
+        width: 85% !important;
+    }
+    .show_timings-container,
+    .show-details-container {
+        width: 85% !important;
+        margin: 2em auto !important;
+        padding: 10px !important;
+    }
+    .show_timings-container h1 {
+        font-size: 22px;
+    }
+    .show-list-container {
+        height: fit-content !important;
+    }
+    .show-list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie-details {
+        text-align: center;
+    }
+    .movie-detail-synopsis li ul {
+        text-align: center;
+        padding: 1px;
+    }
+    .movie-detail-synopsis li {
+        padding: 1em;
+    }
+    /* Trailers Page */
+    .trailers-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer-list-item {
+        width: 100%;
+    }
+    .trailer-list-item-side {
+        width: 100%;
+        padding: 0px;
+    }
+    .other-movie-list {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+    /* Contact Us page */
+    .outer-div {
+        display: flex;
+        width: 90%;
+        margin: 0px auto;
+        flex-wrap: wrap;
+    }
+    .map-div {
+        width: 100% !important;
+        margin: 0px auto;
+    }
+    .contact-form-div {
+        width: 100% !important;
+        padding: 20px 3px !important;
+        margin-top: 1em;
+    }
+    #hours-of-operation-h1 {
+        text-align: center;
+        margin-top: 1em !important;
+    }
+    .operations-table {
+        width: 90% !important;
+    }
+    .mobile-only {
+        display: block;
+    }
+    .check {
+        display: none;
+    }
+    /* About US page */
+    .mission-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .mission-block div {
+        max-width: 95% !important;
+    }
+    .mission-block div img {
+        max-width: 30%;
+    }
+    .mission-block div p {
+        margin-top: 20px;
+    }
+    .what-we-offer ul {
+        padding-left: 6%;
+    }
+    .contact-us-block p {
+        font-size: 18px;
+        letter-spacing: 0.25px;
+        padding: 0% 3%;
+    }
+    /* Upcoming movies */
+    .in-up-coming {
+        display: flex;
+        flex-direction: column;
+    }
+    .up-coming-details {
+        text-align: center;
+        width: 90%;
+    }
+    #in-up {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mobileNav-specific {
+        display: block;
+    }
+    .mobile-only {
+        display: none;
+    }
+}
+
+@media only screen and (orientation: landscape) {
     /* Show Timings */
     .main-container {
         width: 85% !important;
