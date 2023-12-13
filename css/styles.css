@@ -1089,6 +1089,24 @@ main .in-up-coming input {
         word-break: break-all;
     }
 
+    /* Upcoming movies */
+    /* Style specifies the display and flex-direction properties to in-up-coming class */
+    .in-up-coming {
+        display: flex;
+        flex-direction: column;
+    }
+    /*  Style specifies the text-align,width and word-break properties to up-coming-details class */
+    .up-coming-details {
+        text-align: center;
+        width: 90%;
+        word-break: break-word;
+    }
+    /* Style specifies the display and flex-direction to in-up id element  */
+    #in-up {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
 
 
