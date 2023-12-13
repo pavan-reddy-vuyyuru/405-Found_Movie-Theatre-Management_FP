@@ -855,6 +855,70 @@ input[type=checkbox]:checked:before {
     margin: 15px auto;
 }
 
+/*---------------------------------------------------------------- Upcoming movies page --------------------------------------------------*/
+
+
+/* Style specifies the width,margin,position,display and flex-direction properties to up-coming id within main */
+
+main #up-coming {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Style specifies the padding,text-align and margin-bottom properties to in-up-coming class */
+
+.in-up-coming {
+    padding: 30px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Style specifies the display,justify-content,align-items and border-style properties to in-up-coming class */
+
+.in-up-coming {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: groove;
+}
+
+
+/* Style specifies the color to hr tag in up-coming class */
+
+.up-coming hr {
+    color: #000;
+}
+
+
+/* Style specifies the font-family,font-size properties to name class within in-up-coming which is within main */
+
+main .in-up-coming .name {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 24px;
+}
+
+
+/* Style specifies the display and width properties to input within in-up-coming which is within main */
+
+main .in-up-coming input {
+    display: inline;
+    width: min-content;
+}
+
+
+/* Style specifies the text-align and padding,width to up-coming-details class  */
+
+.up-coming-details {
+    text-align: left;
+    padding: 25px;
+    width: 70%;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 
