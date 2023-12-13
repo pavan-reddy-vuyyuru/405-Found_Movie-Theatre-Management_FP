@@ -1,6 +1,13 @@
 /* Styles goes here */
 
 
+/* Authors : Venkata Sandeep Reddy Sabbella
+             Pavan Kumar Reddy Vuyyuru
+             Rithvik Varma Thotakura
+             Rajesh Jyoti Samrat
+*/
+
+
 /*------------------------------------------------------- Login Page CSS Starts Here ------------------------------------------------------------*/
 
 #login-form {
@@ -91,53 +98,32 @@ span.psw {
 
 /*--------------------------------------------------------------- Trailer Page CSS starts -------------------------------------------------------*/
 
-
-/* Style specifies the border-bottom and padding-bottom properties to page-header class */
-
 .page-header {
     border-bottom: 3px solid #000;
     padding-bottom: 10px;
 }
 
-
-/* Style specifies the display property to trailer-list class */
-
 .trailers-list {
     display: flex;
 }
-
-
-/* Style specifies the width and height to trailer-list-item class */
 
 .trailer-list-item {
     width: 70%;
     height: fit-content;
 }
 
-
-/* Style specifies the width and height to trailer-list-item-side class */
-
 .trailer-list-item-side {
     width: 30%;
     height: fit-content;
 }
 
-
-/*  Style specifies the padding to trailer-list-item-side class */
-
 .trailer-list-item-side {
     padding: 50px 10px;
 }
 
-
-/*  Style specifies the padding to h3 within trailer-list-item-side class */
-
 .trailer-list-item-side h3 {
     padding: 5px 10px
 }
-
-
-/*  Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
 
 .other-movie-list {
     display: flex;
@@ -145,9 +131,6 @@ span.psw {
     align-items: center;
     flex-direction: column;
 }
-
-
-/* Style specifies the font-weight,font-size,padding,margin and text-align properties to p tag within other-movie-list class */
 
 .other-movie-list p {
     font-weight: 700;
@@ -160,25 +143,16 @@ span.psw {
 
 /* ------------------------------------------------ Show_timings CSS Starts ----------------------------------------------------*/
 
-
-/* Style specifies the margin to top and bottom for the show-timings-container class*/
-
 .show_timings-container {
     margin-bottom: 5em;
     margin-top: 3em;
 }
-
-
-/* Style specifies the border, padding and border-radius to show_timings-container class in main */
 
 main .show_timings-container {
     border: 1px solid #000;
     padding: 1em 2em;
     border-radius: 20px;
 }
-
-
-/* Style specifies the border, padding, margin bottom and border-radius to show-details-container class in main */
 
 main .show-details-container {
     border: 1px solid #000;
@@ -187,17 +161,11 @@ main .show-details-container {
     margin-bottom: 2em;
 }
 
-
-/* Style specifies the height,display and justify-content properties for show-list-container class */
-
 .show-list-container {
     height: 20em;
     display: flex;
     justify-content: space-around;
 }
-
-
-/* Style specifies the display ,padding top and height properties to image in show-list-container */
 
 .show-list-container img {
     display: inline-block;
@@ -205,56 +173,35 @@ main .show-details-container {
     height: 100%;
 }
 
-
-/* Style specifies the width,margin to show_timings-container and show-details-container */
-
 .show_timings-container,
 .show-details-container {
     width: 70%;
     margin: 3em auto;
 }
 
-
-/* Style specifies the font-size and font-weight to para p tag in movie-title class */
-
 .movie-title p {
     font-size: 18px;
     font-weight: 800;
 }
-
-
-/* Style specifies the list-style-type and font-size to movie-info class */
 
 .movie-info {
     list-style-type: none;
     font-size: 18px;
 }
 
-
-/* Style specifies the padding left property to ordered list and unordered list items within movie-info class */
-
 .movie-info ul,
 .movie-info ol {
     padding-left: 0em;
 }
-
-
-/* Style specifies the float property and height to movie-image class */
 
 .movie-image {
     float: left;
     height: 95%;
 }
 
-
-/* Style specifies the float property to movie-details class */
-
 .movie-details {
     float: right;
 }
-
-
-/* Style specifies the width,padding,margin,display,box-sizing,color and text-transform and font-size properties to input element with type data  */
 
 input[type=date] {
     width: 100%;
@@ -267,9 +214,6 @@ input[type=date] {
     font-size: 16px;
 }
 
-
-/* Style Specifies the list-style-type,font-style,border-top and padding properties to list elements within movie-detail-synopsis class */
-
 .movie-detail-synopsis li {
     list-style-type: none;
     font-style: italic;
@@ -277,18 +221,12 @@ input[type=date] {
     padding: 5px;
 }
 
-
-/* Style specifies the margin-top property to movie-detail-synopsis class */
-
 .movie-detail-synopsis {
     margin-top: 1em;
 }
 
 
 /*-------------------------------------------------------- index.html Home Page CSS starts -------------------------------------------------------------*/
-
-
-/* Style specifies the display,justify-content,margin-top,align-items,flex-wrap properties for now-playing-container class in home page */
 
 .now-playing-container {
     display: flex;
@@ -298,9 +236,6 @@ input[type=date] {
     flex-wrap: wrap;
 }
 
-
-/* Style specifies the background-color,border-radius,margin and padding to card class in home page */
-
 .card {
     background-color: #fff;
     border-radius: 8px;
@@ -308,26 +243,17 @@ input[type=date] {
     padding: 10px;
 }
 
-
-/* Style specifies the width,height and border-radius for image in card class */
-
 .card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-
-/* Style specifies the padding for content class  */
-
 .content {
     padding-top: 4px;
     padding-left: 4px;
     padding-bottom: 8px;
 }
-
-
-/*  Style specifies the color,font-size,font-weight,text-align,margin,text overflow and whitespace properties to content-text class in card container */
 
 .content-text {
     color: #000;
@@ -340,9 +266,6 @@ input[type=date] {
     margin: 10px auto;
 }
 
-
-/* Style specifies the color,font-size,font-style,text-align and font-weight properties for p tag in content class */
-
 .content p {
     color: black;
     font-size: 14px;
@@ -350,9 +273,6 @@ input[type=date] {
     text-align: center;
     font-weight: 100;
 }
-
-
-/* Style specifies the text-decoration,text-align,padding and display and border-radius properties to anchor tag in content class  */
 
 .content a {
     text-decoration: none;
@@ -362,32 +282,20 @@ input[type=date] {
     border-radius: 8px;
 }
 
-
-/* Pseudo class for a tag in content class */
-
 .content a:hover {
     text-decoration: none;
     opacity: 0.8;
 }
-
-
-/* Style specifies the margin to top and color of h1 tag in main element */
 
 main h1 {
     margin-top: 20px;
     color: #000;
 }
 
-
-/* Style specifies the height and width of slider class  */
-
 .slider {
     height: 100%;
     width: 100%;
 }
-
-
-/* Style specifies the width,max-width and height and border radius fpr img tag in slider class this properties are used for banner   */
 
 .slider img {
     max-width: 100%;
@@ -395,9 +303,6 @@ main h1 {
     width: 100%;
     border-radius: 20px;
 }
-
-
-/* Style specifies the margin,background color,text-align,padding and border-radius for offer class */
 
 .offer {
     background-color: #000;
@@ -407,15 +312,9 @@ main h1 {
     padding: 1px;
 }
 
-
-/* Style specifies the color to h2 tag in offer container  */
-
 .offer h2 {
     color: white;
 }
-
-
-/* Style specifies the margin,width and border-radius for movie-news card class */
 
 .movie-news-card {
     width: 300px;
@@ -423,24 +322,15 @@ main h1 {
     margin: 20px;
 }
 
-
-/* Style specifies the width,height and border-radius for image element in movie-news-card class */
-
 .movie-news-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-
-/* Style specifies the padding to class"content2" */
-
 .content2 {
     padding: 4px 4px 4px 4px;
 }
-
-
-/* Style specifies the font-size,font-weight,color to p tag(para) in content2 class */
 
 .content2 p {
     font-size: 18px;
@@ -451,33 +341,21 @@ main h1 {
 
 /*----------------------------------------------------- Contact Us Page CSS starts ------------------------------------------------------*/
 
-
-/* Style specifies the width and padding tp content-form-div class */
-
 .contact-form-div {
     width: 60%;
     padding: 20px;
 }
-
-
-/* Style specifies the text-align properties and margin to content form-h1 id  */
 
 #contact-form-h1 {
     text-align: center;
     margin: 0px auto 20px auto;
 }
 
-
-/* Style specifies teh padding,margin and max-width properties to contact form class */
-
 .contact-form {
     max-width: 95%;
     margin: auto;
     padding: 0 10px;
 }
-
-
-/* Style specifies the display,width,margin ,border-radius and width to contact-form-text class */
 
 .contact-form-text {
     display: block;
@@ -487,48 +365,30 @@ main h1 {
     border-radius: 20px;
 }
 
-
-/* Style specifies box-shadow the pseudo class for contact form text class */
-
 .contact-form-text:hover {
     box-shadow: 0 0 15px 2px black;
 }
-
-
-/* Style specifies the resize and height for contact-form-ta id */
 
 #contact-form-ta {
     resize: none;
     height: 100px;
 }
 
-
-/* Style specifies the width and margin properties for .map-div class */
-
 .map-div {
     width: 60%;
     margin: 0px auto;
 }
-
-
-/* Style specifies the width and height for map class */
 
 .map {
     width: 100%;
     height: 100%;
 }
 
-
-/* Style specifies the display width and margin properties for outer-div class */
-
 .outer-div {
     display: flex;
     width: 85%;
     margin: 0px auto;
 }
-
-
-/* Style specifies the border-collapse,width,margin and border for operation-table class */
 
 .operations-table {
     border-collapse: collapse;
@@ -537,17 +397,11 @@ main h1 {
     border: 1px solid #dddddd;
 }
 
-
-/* Style specifies the padding and text-align properties to table head and table data tags in operation-table class */
-
 .operations-table td,
 .operations-table th {
     padding: 8px;
     text-align: center;
 }
-
-
-/* Style specifies the text-align, background color and text color fpr table header in .operations-table */
 
 .operations-table th {
     text-align: center;
@@ -555,18 +409,12 @@ main h1 {
     color: white;
 }
 
-
-/* Style specifies the text-align,font-size,font-weight and padding to caption of table */
-
 caption {
     text-align: center;
     font-size: 2em;
     font-weight: 800;
     padding: 1em;
 }
-
-
-/* Style specifies the border left and border-bottom to table header th and table data td of table */
 
 th,
 td {
@@ -741,17 +589,11 @@ input[type=checkbox]:checked:before {
 
 /* ------------------------------------------------------- About US page CSS starts ------------------------------------------------------- */
 
-
-/* Style specifies the max-width,margin to left and right for container class  */
-
 .container {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* Style specifies the font-size and margin to left and right to mission,offer and contact_us classes */
 
 .mission,
 .offer,
@@ -761,9 +603,6 @@ input[type=checkbox]:checked:before {
     margin-right: auto;
 }
 
-
-/* Style specifies the margin-top,font-style to h2 tag within mission,what-we-offer and contact-us-block */
-
 .mission h2,
 .what-we-offer h2,
 .contact-us-block h2 {
@@ -772,15 +611,9 @@ input[type=checkbox]:checked:before {
     margin-bottom: 0px;
 }
 
-
-/* Style specifies the padding left to unordered list items within what-we-offer class */
-
 .what-we-offer ul {
     padding-left: 4%;
 }
-
-
-/* Style specifies the display,flex-direction,align-items,justify content and padding properties to mission-block */
 
 .mission-block {
     display: flex;
@@ -790,15 +623,9 @@ input[type=checkbox]:checked:before {
     padding: 20px;
 }
 
-
-/* Style specifies the max-width property to div within mission-block class */
-
 .mission-block div {
     max-width: 70%;
 }
-
-
-/* Style specifies the line-height,font-size,text-align and margin-top to p tag within div which is within mission-block class */
 
 .mission-block div p {
     line-height: 2;
@@ -807,26 +634,17 @@ input[type=checkbox]:checked:before {
     margin-top: 0px;
 }
 
-
-/* Style specifies the max-width,margin and display properties to image tag within div which is within mission-block class */
-
 .mission-block div img {
     max-width: 40%;
     margin: 0px auto;
     display: block;
 }
 
-
-/* Style for list items within what-we-offer class with properties font-size,line-height,letter-spacing properties */
-
 .what-we-offer li {
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.25px;
 }
-
-
-/* Style specifies the font-size,letter-spacing and padding to p tag within contact-us-block class */
 
 .contact-us-block p {
     font-size: 18px;
@@ -837,23 +655,14 @@ input[type=checkbox]:checked:before {
 
 /*------------------------------------------------------------ Terms and Conditions Page ---------------------------------------------------*/
 
-
-/* Style specifies the font-size,letter-spacing to terms-para class */
-
 .terms-para {
     letter-spacing: 0.25px;
     font-size: 16px;
 }
 
-
-/* Style specifies the line-height to t-c-list class */
-
 .t-c-list {
     line-height: 1.4;
 }
-
-
-/* Style specifies the margin to list items within t-c-list class */
 
 .t-c-list li {
     margin: 15px auto;
@@ -861,9 +670,6 @@ input[type=checkbox]:checked:before {
 
 
 /*---------------------------------------------------------------- Upcoming movies page --------------------------------------------------*/
-
-
-/* Style specifies the width,margin,position,display and flex-direction properties to up-coming id within main */
 
 main #up-coming {
     width: 100%;
@@ -873,17 +679,11 @@ main #up-coming {
     flex-direction: column;
 }
 
-
-/* Style specifies the padding,text-align and margin-bottom properties to in-up-coming class */
-
 .in-up-coming {
     padding: 30px 10px;
     text-align: center;
     margin-bottom: 10px;
 }
-
-
-/* Style specifies the display,justify-content,align-items and border-style properties to in-up-coming class */
 
 .in-up-coming {
     display: flex;
@@ -892,31 +692,19 @@ main #up-coming {
     border-style: groove;
 }
 
-
-/* Style specifies the color to hr tag in up-coming class */
-
 .up-coming hr {
     color: #000;
 }
-
-
-/* Style specifies the font-family,font-size properties to name class within in-up-coming which is within main */
 
 main .in-up-coming .name {
     font-family: 'Courier New', Courier, monospace, sans-serif;
     font-size: 24px;
 }
 
-
-/* Style specifies the display and width properties to input within in-up-coming which is within main */
-
 main .in-up-coming input {
     display: inline;
     width: min-content;
 }
-
-
-/* Style specifies the text-align and padding,width to up-coming-details class  */
 
 .up-coming-details {
     text-align: left;
@@ -985,7 +773,6 @@ button:hover {
 
 @media all and (min-width:320px) and (max-width:480px) {
     /* Show Timings Page */
-    /* Style specifies the display property to ls-page-mobile-tablet class to show in mobile layout */
     .ls-page-mobile-tablet {
         display: block;
     }
@@ -995,167 +782,146 @@ button:hover {
     .check {
         display: none;
     }
-    /* Style specifies the width and padding to main-container class */
     .main-container {
         width: 85% !important;
         padding: 0.5em !important;
     }
-    /* Style specifies the width,margin and padding to show_timings-container and show-details-container */
     .show_timings-container,
     .show-details-container {
         width: 85% !important;
         margin: 2em auto !important;
         padding: 10px !important;
     }
-    /* Style specifies the font-size to h1 tag present in show_timings container  */
     .show_timings-container h1 {
         font-size: 22px;
     }
-    /* Style specifies the height to show-list-container class  */
     .show-list-container {
         height: fit-content !important;
     }
-    /* Style specifies the display,flex-direction and align-items to show-list-container class  */
     .show-list-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    /* Style specifies the text-align properties to movie-details class  */
     .movie-details {
         text-align: center;
     }
-    /* Style specifies the font-size property to movie-info class  */
     .movie-info {
         font-size: 14px !important;
     }
-    /* Style specifies the text-align,padding,font-size properties to unordered list in movie-detail-synopsis class  */
     .movie-detail-synopsis li ul {
         text-align: center;
         padding: 1px;
         font-size: 14px;
     }
-    /* Style specifies the padding property to list in movie-detail-synopsis class  */
     .movie-detail-synopsis li {
         padding: 1em;
     }
     /* Trailers Page */
-    /* Style specifies the flex-direction,display properties to trailer-list class */
     .trailers-list {
         display: flex;
         flex-direction: column;
     }
-    /* Style specifies the width to trailer-list-item class */
     .trailer-list-item {
         width: 100%;
     }
-    /* Style specifies the width and padding to trailer-list-item-side class */
     .trailer-list-item-side {
         width: 100%;
         padding: 0px;
     }
-    /* Style specifies the padding to h3 within trailer-list-item-side */
     .trailer-list-item-side h3 {
         padding: 0px;
     }
-    /* Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
     .other-movie-list {
         display: flex;
         padding: 10px;
         align-items: center;
         flex-direction: column;
     }
-    /* Style specifies the max-width,width and height to video element */
     video {
         max-width: 100%;
         width: 100%;
         height: 100%;
     }
     /* Home Page */
-    /* Style specifies the width to card class */
     .card {
         width: 75%;
     }
-    /* Style specifies the width to offer class */
     .offer {
         width: 90%;
     }
-    /* Style specifies the text-align property to p tag in content2 class */
     .content2 p {
         text-align: center;
     }
     /* Contact Us Page */
-    /* Style specifies the display,width,margin and flex-wrap to outer-div class */
     .outer-div {
         display: flex;
         width: 90%;
         margin: 0px auto;
         flex-wrap: wrap;
     }
-    /* Style specifies the width and margin property to map-div class */
     .map-div {
         width: 100% !important;
         margin: 0px auto;
     }
-    /* Style specifies the width and padding and margin-top to contact form div */
     .contact-form-div {
         width: 100% !important;
         padding: 20px 3px !important;
         margin-top: 1em;
     }
-    /* Style specifies the text-align and margin-top property to h1 tag within hours-of-operation id */
     #hours-of-operation-h1 {
         text-align: center;
         margin-top: 1em !important;
     }
-    /* Style specifies the width to operation-table class */
     .operations-table {
         width: 90% !important;
     }
     /*About US CSS*/
-    /* Style specifies the display,flex-direction,align-items and padding to mission-block */
     .mission-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
     }
-    /* Style specifies the max-width property to div within mission-block class */
     .mission-block div {
         max-width: 95% !important;
     }
-    /* Style specifies the font-size,margin-top to p tag within div which is within mission-block class */
     .mission-block div p {
         font-size: 16px;
         margin-top: 20px;
     }
-    /* Style specifies the padding-left property to what-we-offer class */
     .what-we-offer ul {
         padding-left: 10%;
     }
-    /* Style specifies the font-size property to list item in what-we-offer class */
     .what-we-offer li {
         font-size: 16px;
     }
-    /* Style specifies the font-size,padding and word-break properties to p element in contact-us-block */
     .contact-us-block p {
         font-size: 16px;
         padding: 1% 5%;
         word-break: break-all;
     }
+    .call-button a {
+        background-color: #000;
+        color: #fff;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+    .desktop-only {
+        display: none;
+    }
     /* Upcoming movies */
-    /* Style specifies the display and flex-direction properties to in-up-coming class */
     .in-up-coming {
         display: flex;
         flex-direction: column;
     }
-    /*  Style specifies the text-align,width and word-break properties to up-coming-details class */
     .up-coming-details {
         text-align: center;
         width: 90%;
         word-break: break-word;
     }
-    /* Style specifies the display and flex-direction to in-up id element  */
     #in-up {
         display: flex;
         flex-direction: column-reverse;
@@ -1184,60 +950,48 @@ button:hover {
 
 @media all and (min-width:481px) and (max-width:768px) {
     /* Show Timings */
-    /* Style specifies the width property to main-container class */
     .main-container {
         width: 85% !important;
     }
-    /* Style specifies the width,margin,padding properties to show_timings-container and show-details-container class */
     .show_timings-container,
     .show-details-container {
         width: 85% !important;
         margin: 2em auto !important;
         padding: 10px !important;
     }
-    /* Style specifies the font-size property to h1 tag in show_timings container */
     .show_timings-container h1 {
         font-size: 22px;
     }
-    /* Style specifies the height for show-list-container class */
     .show-list-container {
         height: fit-content !important;
     }
-    /* Style specifies the display,flex-direction and align-items properties to show-list-container class */
     .show-list-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    /* Style specifies the text-align property to movie-details class */
     .movie-details {
         text-align: center;
     }
-    /* Style specifies the text-align property and padding to unordered list items in li within movie-detail-synopsis class */
     .movie-detail-synopsis li ul {
         text-align: center;
         padding: 1px;
     }
-    /* Style specifies the padding to list items li within movie-detail-synopsis */
     .movie-detail-synopsis li {
         padding: 1em;
     }
     /* Trailers Page */
-    /* Style specifies the display and flex-direction properties to trailer-list class */
     .trailers-list {
         display: flex;
         flex-direction: column;
     }
-    /* Style specifies the width property to trailer-list-item class */
     .trailer-list-item {
         width: 100%;
     }
-    /* Style specifies the width and padding to trailer-list-item-side class */
     .trailer-list-item-side {
         width: 100%;
         padding: 0px;
     }
-    /* Style specifies the display,padding,align-items and flex-direction to other-movie-list class */
     .other-movie-list {
         display: flex;
         padding: 10px;
@@ -1245,30 +999,25 @@ button:hover {
         flex-direction: column;
     }
     /* Contact Us page */
-    /* Style for outer-div class that specifies the display,width,margin and flex-wrap properties */
     .outer-div {
         display: flex;
         width: 90%;
         margin: 0px auto;
         flex-wrap: wrap;
     }
-    /* Style specifies the width and margin properties to map-div class */
     .map-div {
         width: 100% !important;
         margin: 0px auto;
     }
-    /* Style specifies the width,padding and margin-top properties to contact-form-div class */
     .contact-form-div {
         width: 100% !important;
         padding: 20px 3px !important;
         margin-top: 1em;
     }
-    /* Style specifies the text-align and margin-top properties to hours-of-operation-h1 id */
     #hours-of-operation-h1 {
         text-align: center;
         margin-top: 1em !important;
     }
-    /* Style specifies the width property to operation-table class */
     .operations-table {
         width: 90% !important;
     }
@@ -1279,52 +1028,46 @@ button:hover {
         display: none;
     }
     /* About US page */
-    /* Style specifies the display,flex-direction,align-items and padding properties to mission-block class */
     .mission-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
     }
-    /* Style specifies the max-width property to div elements within mission-block */
     .mission-block div {
         max-width: 95% !important;
     }
-    /* Style specifies the max-width property to img element inside div elements within mission-block */
     .mission-block div img {
         max-width: 30%;
     }
-    /* Style specifies the margin-top property to p elements inside div elements within mission-block */
     .mission-block div p {
         margin-top: 20px;
     }
-    /* Style specifies the padding-left to unordered list items within what-we-offer class */
     .what-we-offer ul {
         padding-left: 6%;
     }
-    /* Style specifies the font-size,letter-spacing and padding properties to contact-us-block class */
     .contact-us-block p {
         font-size: 18px;
         letter-spacing: 0.25px;
         padding: 0% 3%;
     }
     /* Upcoming movies */
-    /* Style specifies the display and flex-direction properties to in-up-coming class */
     .in-up-coming {
         display: flex;
         flex-direction: column;
     }
-    /* Style specifies the text-align and width properties to up-coming-details class*/
     .up-coming-details {
         text-align: center;
         width: 90%;
     }
-    /* Style specifies the display and flex-direction properties to in-up id */
     #in-up {
         display: flex;
         flex-direction: column-reverse;
     }
     .mobileNav-specific {
         display: block;
+    }
+    .mobile-only {
+        display: none;
     }
 }
