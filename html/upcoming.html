@@ -48,7 +48,7 @@
 
         </nav>
         <!-- Use the main area to add the main content of the webpage -->
-        <main>
+        <main id="mainContainer" ontouchend="touchEndFunc()">
             <div class="main-container">
                 <h1 class="page-header">Upcoming Movies :</h1>
                 <div id="up-coming">
@@ -80,7 +80,7 @@
                             <p style="margin-top: 2em;"><a target="_blank" href="https://www.youtube.com/embed/j5MLXuISWhs" class="active-button">Watch Trailer</a></p>
                         </div>
                     </div>
-                    <div class="in-up-coming" id="in-up">
+                    <div class="in-up-coming" id="in-up" ontouchmove="myFunction(event)">
                         <div class="up-coming-details">
                             <p class="name"><b>Movie Name</b> : Pain Hustlers</p>
                             <p>High-school dropout Lisa Drake (Emily Blunt) starts a job at a bankrupt pharmacy in order to better her and her daughter's life, and soon finds herself caught in the middle of a criminal conspiracy.</p>
