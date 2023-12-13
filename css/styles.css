@@ -713,7 +713,9 @@ input[type=checkbox]:checked:before {
     color: red;
     border-radius: 25px;
     padding: 10px;
-    border: 1px solid #000
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-top: 20px;
 }
 
 .payment-button:hover {
@@ -729,12 +731,13 @@ input[type=checkbox]:checked:before {
 }
 
 .check {
-    display: block;
+    display: table-cell;
 }
 
 .mobile-only {
     display: none;
 }
+
 
 /* ------------------------------------------------------- About US page CSS starts ------------------------------------------------------- */
 
@@ -831,6 +834,7 @@ input[type=checkbox]:checked:before {
     padding: 0% 1%;
 }
 
+
 /*------------------------------------------------------------ Terms and Conditions Page ---------------------------------------------------*/
 
 
@@ -854,6 +858,7 @@ input[type=checkbox]:checked:before {
 .t-c-list li {
     margin: 15px auto;
 }
+
 
 /*---------------------------------------------------------------- Upcoming movies page --------------------------------------------------*/
 
@@ -919,6 +924,7 @@ main .in-up-coming input {
     width: 70%;
 }
 
+
 /* ---------------------------------------- Profile Page------------------------------------------- */
 
 #profile-container {
@@ -967,6 +973,7 @@ button:hover {
 .mobileNav-specific {
     display: none;
 }
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -1105,7 +1112,6 @@ button:hover {
     .operations-table {
         width: 90% !important;
     }
-
     /*About US CSS*/
     /* Style specifies the display,flex-direction,align-items and padding to mission-block */
     .mission-block {
@@ -1137,7 +1143,6 @@ button:hover {
         padding: 1% 5%;
         word-break: break-all;
     }
-
     /* Upcoming movies */
     /* Style specifies the display and flex-direction properties to in-up-coming class */
     .in-up-coming {
@@ -1155,7 +1160,6 @@ button:hover {
         display: flex;
         flex-direction: column-reverse;
     }
-
     #profile-container {
         width: 100%;
         align-items: stretch;
@@ -1167,7 +1171,6 @@ button:hover {
     .mobileNav-specific {
         display: block;
     }
-
 }
 
 
@@ -1275,7 +1278,6 @@ button:hover {
     .check {
         display: none;
     }
-
     /* About US page */
     /* Style specifies the display,flex-direction,align-items and padding properties to mission-block class */
     .mission-block {
@@ -1306,7 +1308,6 @@ button:hover {
         letter-spacing: 0.25px;
         padding: 0% 3%;
     }
-
     /* Upcoming movies */
     /* Style specifies the display and flex-direction properties to in-up-coming class */
     .in-up-coming {
@@ -1323,7 +1324,6 @@ button:hover {
         display: flex;
         flex-direction: column-reverse;
     }
-
     .mobileNav-specific {
         display: block;
     }
