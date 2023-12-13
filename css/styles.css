@@ -831,6 +831,143 @@ input[type=checkbox]:checked:before {
     padding: 0% 1%;
 }
 
+/*------------------------------------------------------------ Terms and Conditions Page ---------------------------------------------------*/
+
+
+/* Style specifies the font-size,letter-spacing to terms-para class */
+
+.terms-para {
+    letter-spacing: 0.25px;
+    font-size: 16px;
+}
+
+
+/* Style specifies the line-height to t-c-list class */
+
+.t-c-list {
+    line-height: 1.4;
+}
+
+
+/* Style specifies the margin to list items within t-c-list class */
+
+.t-c-list li {
+    margin: 15px auto;
+}
+
+/*---------------------------------------------------------------- Upcoming movies page --------------------------------------------------*/
+
+
+/* Style specifies the width,margin,position,display and flex-direction properties to up-coming id within main */
+
+main #up-coming {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Style specifies the padding,text-align and margin-bottom properties to in-up-coming class */
+
+.in-up-coming {
+    padding: 30px 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Style specifies the display,justify-content,align-items and border-style properties to in-up-coming class */
+
+.in-up-coming {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-style: groove;
+}
+
+
+/* Style specifies the color to hr tag in up-coming class */
+
+.up-coming hr {
+    color: #000;
+}
+
+
+/* Style specifies the font-family,font-size properties to name class within in-up-coming which is within main */
+
+main .in-up-coming .name {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 24px;
+}
+
+
+/* Style specifies the display and width properties to input within in-up-coming which is within main */
+
+main .in-up-coming input {
+    display: inline;
+    width: min-content;
+}
+
+
+/* Style specifies the text-align and padding,width to up-coming-details class  */
+
+.up-coming-details {
+    text-align: left;
+    padding: 25px;
+    width: 70%;
+}
+
+/* ---------------------------------------- Profile Page------------------------------------------- */
+
+#profile-container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile-photo {
+    padding: 20px;
+}
+
+#profile-details {
+    flex: 2;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: -webkit-fill-available;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.mobileNav-specific {
+    display: none;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -1001,6 +1138,36 @@ input[type=checkbox]:checked:before {
         word-break: break-all;
     }
 
+    /* Upcoming movies */
+    /* Style specifies the display and flex-direction properties to in-up-coming class */
+    .in-up-coming {
+        display: flex;
+        flex-direction: column;
+    }
+    /*  Style specifies the text-align,width and word-break properties to up-coming-details class */
+    .up-coming-details {
+        text-align: center;
+        width: 90%;
+        word-break: break-word;
+    }
+    /* Style specifies the display and flex-direction to in-up id element  */
+    #in-up {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #profile-container {
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 0.5rem;
+    }
+    .mobileNav-specific {
+        display: block;
+    }
+
 }
 
 
@@ -1138,5 +1305,26 @@ input[type=checkbox]:checked:before {
         font-size: 18px;
         letter-spacing: 0.25px;
         padding: 0% 3%;
+    }
+
+    /* Upcoming movies */
+    /* Style specifies the display and flex-direction properties to in-up-coming class */
+    .in-up-coming {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Style specifies the text-align and width properties to up-coming-details class*/
+    .up-coming-details {
+        text-align: center;
+        width: 90%;
+    }
+    /* Style specifies the display and flex-direction properties to in-up id */
+    #in-up {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mobileNav-specific {
+        display: block;
     }
 }
