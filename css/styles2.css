@@ -275,6 +275,10 @@ button:hover {
         color: #fff;
         padding: 5%;
     }
+    .active-button {
+        padding: 14px 10px;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -327,6 +331,10 @@ button:hover {
     }
     .ls-page {
         display: none;
+    }
+    .active-button {
+        padding: 14px 10px;
+        margin-bottom: 10px;
     }
 }
 
