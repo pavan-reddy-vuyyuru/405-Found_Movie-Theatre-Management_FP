@@ -10,15 +10,6 @@ function onLoaderFunc() {
         element.disabled = true;
     });
 
-    seatStructures.forEach(function(element) {
-        element.addEventListener("click", function() {
-            if (!element.classList.contains("booked")) {
-                element.classList.toggle("selected");
-            }
-        });
-    });
-
-    // Load previously selected seats from localStorage
     var previouslySelectedSeats = getPreviouslySelectedSeats();
     previouslySelectedSeats.forEach(function(seat) {
         var selectedSeat = document.querySelector('input[value="' + seat + '"]');
@@ -50,11 +41,19 @@ function takeData() {
         seatStructureElements.forEach(function(element) {
             element.addEventListener("click", function() {
                 if (!element.classList.contains("booked")) {
-                    element.classList.toggle("selected");
+                    //element.classList.toggle("selected");
                 }
             });
         });
-
+        var previouslySelectedSeats = getPreviouslySelectedSeats();
+        previouslySelectedSeats.forEach(function(seat) {
+            var selectedSeat = document.querySelector('input[value="' + seat + '"]');
+            if (selectedSeat) {
+                selectedSeat.checked = true;
+                selectedSeat.disabled = true;
+                //selectedSeat.parentElement.classList.add("selected");
+            }
+        });
         document.getElementById("notification").innerHTML =
             "<b style='margin-bottom:0px;background:yellow;text-align:center;display:block'>Please Select your Seats NOW!</b>";
     }
@@ -76,6 +75,7 @@ function updateTextArea() {
         var seatStructureElements = document.querySelectorAll(".seatStructure *");
         seatStructureElements.forEach(function(element) {
             element.disabled = true;
+
         });
 
         var allNameVals = [document.getElementById("Username").value];

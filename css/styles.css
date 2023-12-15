@@ -513,12 +513,12 @@ input[type=number] {
     display: block;
 }
 
-input[type=checkbox] {
+tr td input[type=checkbox] {
     width: 0px;
     margin-right: 18px;
 }
 
-input[type=checkbox]:before {
+tr td input[type=checkbox]:before {
     content: "";
     width: 15px;
     height: 15px;
@@ -529,8 +529,8 @@ input[type=checkbox]:before {
     background-color: #ccc;
 }
 
-input[type=checkbox]:checked:before {
-    background-color: Green;
+tr .selected input[type=checkbox]:checked::before {
+    background-color: red;
     font-size: 15px;
 }
 
@@ -713,7 +713,7 @@ main .in-up-coming input {
 }
 
 
-/* ---------------------------------------- Profile Page------------------------------------------- */
+/* ----------------------------------------------------- Profile Page------------------------------------------------------------------ */
 
 #profile-container {
     display: flex;
@@ -1071,6 +1071,10 @@ button:hover {
     .mobile-only {
         display: none;
     }
+    button {
+        margin-bottom: 0.5rem;
+        margin: 0.5rem;
+    }
 }
 
 @media only screen and (max-width:768px) and (orientation: landscape) {
@@ -1195,6 +1199,10 @@ button:hover {
     .mobile-only {
         display: none;
     }
+    button {
+        margin-bottom: 0.5rem;
+        margin: 0.5rem;
+    }
 }
 
 input[type='checkbox'] {
@@ -1207,4 +1215,9 @@ input[type='checkbox']:disabled {
 
 .info-display {
     display: inline-block;
+}
+
+tr td input[type=checkbox]:checked::before {
+    background-color: green;
+    font-size: 15px;
 }
