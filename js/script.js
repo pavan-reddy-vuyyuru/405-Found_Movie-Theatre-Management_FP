@@ -1,19 +1,33 @@
+document.addEventListener("DOMContentLoaded", function() {
+    onLoaderFunc();
+});
+
 function onLoaderFunc() {
     var seatStructures = document.querySelectorAll(".seatStructure *");
-    var displayerBoxes = document.querySelectorAll(".displayerBoxes *");
 
+    var seatStructures = document.querySelectorAll(".seatStructure input");
     seatStructures.forEach(function(element) {
         element.disabled = true;
     });
 
-    displayerBoxes.forEach(function(element) {
-        element.disabled = true;
+    seatStructures.forEach(function(element) {
+        element.addEventListener("click", function() {
+            if (!element.classList.contains("booked")) {
+                element.classList.toggle("selected");
+            }
+        });
     });
-}
 
-function justalert() {
-    //console.log("We r here");
-    alert("Thanks for Booking the tickets...");
+    // Load previously selected seats from localStorage
+    var previouslySelectedSeats = getPreviouslySelectedSeats();
+    previouslySelectedSeats.forEach(function(seat) {
+        var selectedSeat = document.querySelector('input[value="' + seat + '"]');
+        if (selectedSeat) {
+            selectedSeat.checked = true;
+            selectedSeat.disabled = true;
+            selectedSeat.parentElement.classList.add("selected");
+        }
+    });
 }
 
 function takeData() {
@@ -29,9 +43,16 @@ function takeData() {
         inputFormElements.forEach(function(element) {
             element.disabled = true;
         });
-
         seatStructureElements.forEach(function(element) {
             element.disabled = false;
+        });
+
+        seatStructureElements.forEach(function(element) {
+            element.addEventListener("click", function() {
+                if (!element.classList.contains("booked")) {
+                    element.classList.toggle("selected");
+                }
+            });
         });
 
         document.getElementById("notification").innerHTML =
@@ -39,16 +60,19 @@ function takeData() {
     }
 }
 
-
-
 function updateTextArea() {
-    let codeBlock = document.getElementById('billing-section');
-    codeBlock.style.display = 'block';
 
     var numSeatsValue = document.getElementById("Numseats").value;
+    var ticketPrice = 20;
+    var selectedSeats = getSelectedSeats();
 
-    if (document.querySelectorAll("input:checked").length === parseInt(numSeatsValue)) {
-        let ticketPrice = 20;
+    // Exclude previously selected seats from validation
+    var previouslySelectedSeats = getPreviouslySelectedSeats();
+    var filteredSelectedSeats = selectedSeats.filter(function(seat) {
+        return !previouslySelectedSeats.includes(seat);
+    });
+
+    if (filteredSelectedSeats.length === parseInt(numSeatsValue)) {
         var seatStructureElements = document.querySelectorAll(".seatStructure *");
         seatStructureElements.forEach(function(element) {
             element.disabled = true;
@@ -56,12 +80,25 @@ function updateTextArea() {
 
         var allNameVals = [document.getElementById("Username").value];
         var allNumberVals = [numSeatsValue];
-        var allSeatsVals = [];
+        var allSeatsVals = filteredSelectedSeats;
 
-        var seatsBlockChecked = document.querySelectorAll('#seatsBlock input:checked');
-        seatsBlockChecked.forEach(function(element) {
-            allSeatsVals.push(element.value);
+        var storedSeats = getPreviouslySelectedSeats();
+        storedSeats = storedSeats.concat(allSeatsVals);
+
+        localStorage.setItem('allBookedSeats', JSON.stringify(storedSeats));
+        //Here chnaged to check the history
+        var bookingData = {
+            name: allNameVals,
+            numSeats: numSeatsValue,
+            seats: filteredSelectedSeats
+        };
+        var allBookings = getBookingHistory();
+        allBookings.push({
+            name: allNameVals,
+            numSeats: numSeatsValue,
+            seats: filteredSelectedSeats
         });
+        localStorage.setItem('latestBooking', JSON.stringify(allBookings));
 
         localStorage.setItem('nameDisplay', allNameVals);
         localStorage.setItem('NumberDisplay', allNumberVals);
@@ -73,56 +110,54 @@ function updateTextArea() {
         var storedSeats = localStorage.getItem('seatsDisplay');
         var storedCost = localStorage.getItem('costDisplay');
 
-
         if (storedName !== null) {
             console.log('Name:', storedName);
         }
 
         if (storedNumber !== null) {
-
             console.log('Number:', storedNumber);
         }
 
         if (storedSeats !== null) {
-
             console.log('Seats:', storedSeats);
         }
 
         if (storedCost !== null) {
-
             console.log('Cost:', storedCost);
         }
+
         document.getElementById('nameDisplay').innerHTML = allNameVals;
         document.getElementById('NumberDisplay').innerHTML = allNumberVals;
-        document.getElementById('seatsDisplay').innerHTML = allSeatsVals;
+        document.getElementById('seatsDisplay').innerHTML = allSeatsVals.join(', ');
         document.getElementById('costDisplay').innerHTML = allNumberVals * ticketPrice;
+
+        let codeBlock = document.getElementById('billing-section');
+        codeBlock.style.display = 'block';
 
     } else {
         alert("Please select " + numSeatsValue + " seats");
     }
 }
 
-
-function myFunction() {
-    alert(document.querySelectorAll("input:checked").length);
+function getSelectedSeats() {
+    var selectedSeats = [];
+    document.querySelectorAll('.seats:checked').forEach(function(seat) {
+        selectedSeats.push(seat.value);
+    });
+    return selectedSeats;
 }
 
-document.querySelectorAll("checkbox").forEach(function(checkbox) {
-    checkbox.addEventListener("click", function() {
-        var numSeatsValue = document.getElementById("Numseats").value;
+function getPreviouslySelectedSeats() {
+    var bookedSeats = localStorage.getItem('allBookedSeats');
+    return bookedSeats !== null ? JSON.parse(bookedSeats) : [];
+}
 
-        if (document.querySelectorAll("input:checked").length === parseInt(numSeatsValue)) {
-            document.querySelectorAll(":checkbox").forEach(function(cb) {
-                cb.disabled = true;
-            });
+function getBookingHistory() {
+    var bookingHistory = localStorage.getItem('latestBooking');
+    return bookingHistory !== null ? JSON.parse(bookingHistory) : [];
+}
 
-            document.querySelectorAll(':checked').forEach(function(checked) {
-                checked.disabled = false;
-            });
-        } else {
-            document.querySelectorAll(":checkbox").forEach(function(cb) {
-                cb.disabled = false;
-            });
-        }
-    });
-});
+function justalert() {
+    alert("Thanks for Booking the tickets...");
+    window.location.replace("index.html");
+}

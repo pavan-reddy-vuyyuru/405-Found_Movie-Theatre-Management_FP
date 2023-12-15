@@ -15,9 +15,10 @@ function toggleNavbar() {
     const navbarLinks = document.querySelector('.navbar-links');
     navbarLinks.style.display = navbarLinks.style.display === 'flex' ? 'none' : 'flex';
 }
-document.getElementById('mainContainer').addEventListener('touchend', function() {
-    touchEndFunc();
-});
+
+// document.getElementById('mainContainer').addEventListener('touchend', function() {
+//     touchEndFunc();
+// });
 
 function touchEndFunc() {
     alert("Your touch ended");

@@ -181,5 +181,12 @@
     </div>
 </body>
 <script src="../js/index.js"></script>
+<script>
+    document.getElementById("start").addEventListener("change", function() {
+        var selectedDate = [];
+        selectedDate.push(value);
+        localStorage.setItem("selectedDate", JSON.stringify(selectedDate));
+    });
+</script>
 
 </html>

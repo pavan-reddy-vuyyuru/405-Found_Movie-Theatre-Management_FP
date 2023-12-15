@@ -15,7 +15,7 @@
     <script src="../js/script.js"></script>
 </head>
 
-<body>
+<body onload="onLoaderFunc()">
     <div id="container">
         <!-- Use the header area for the website name or logo -->
         <header>
@@ -283,7 +283,7 @@
                                     <div class="info-result" id="seatsDisplay"></div>
                                 </div>
                                 <div>
-                                    <label class="info-display" for="costDisplay">Total Cost : </label>
+                                    <label class="info-display" for="costDisplay">Total Cost(in CAD) : </label>
                                     <div class="info-result" id="costDisplay"></div>
                                 </div>
                                 <div>
@@ -309,6 +309,11 @@
         </div>
 </body>
 <script src="../js/index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        onLoaderFunc();
+    });
+</script>
 
 </html>
 </script>

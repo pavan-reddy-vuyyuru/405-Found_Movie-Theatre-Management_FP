@@ -18,4 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.signOut = function() {
         window.location.href = 'login.html';
     };
+    window.myBookings = function() {
+        window.location.href = 'user-bookings.html';
+    }
 });
