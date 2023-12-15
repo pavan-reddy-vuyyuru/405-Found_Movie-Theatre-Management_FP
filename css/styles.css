@@ -148,12 +148,6 @@ span.psw {
     margin-top: 3em !important;
 }
 
-main .show_timings-container {
-    /* border: 1px solid #000;
-    padding: 1em 2em;
-    border-radius: 20px; */
-}
-
 main .show-details-container {
     border: 1px solid #000;
     padding: 2em 0em;
@@ -823,7 +817,7 @@ button:hover {
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* @media all and (min-width:220px) and (max-width:480px) In general For mobile starts at this  */
+/* @media all and (min-width:220px) and (max-width:480px) In general For mobile starts at this */
 
 @media all and (min-width:20px) and (max-width:480px) {
     /* Show Timings Page */
