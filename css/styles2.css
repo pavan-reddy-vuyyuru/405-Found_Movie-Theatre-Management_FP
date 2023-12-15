@@ -222,7 +222,7 @@ button:hover {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media all and (min-width:320px) and (max-width:480px) {
+@media all and (min-width:20px) and (max-width:480px) {
     .header-logo {
         display: none;
     }
@@ -341,7 +341,7 @@ button:hover {
 
 /* Styles for Footer till certain breakpoint to look fair*/
 
-@media all and (min-width:320px) and (max-width:652px) {
+@media all and (min-width:20px) and (max-width:652px) {
     footer {
         display: flex;
         justify-content: space-between;

@@ -7,8 +7,6 @@ function displayBookingHistory() {
     var historyContainer = document.getElementById("bookingHistory");
 
     if (bookingHistory.length > 0) {
-        var dateSelected = [];
-        dateSelected.push(localStorage.getItem('selectedDate'));
         for (var index = 0; index < bookingHistory.length; index++) {
             var booking = bookingHistory[index];
             var totalPrice = booking.numSeats * 20; // Assuming ticket price is $20
@@ -17,13 +15,13 @@ function displayBookingHistory() {
             // Create HTML content using string concatenation
             var bookingInfoHTML =
                 "<div>" +
-                "<h2>Booking " + (index + 1) + "</h2>" +
+                "<h2>Booking " + (index + 1) + " :</h2>" +
                 "<p>Name: " + name + "</p>" +
                 "<p>Number of Seats: " + booking.numSeats + "</p>" +
                 "<p>Seats: " + booking.seats.join(", ") + "</p>" +
                 "<p>Total Price: $" + totalPrice + "</p>" +
                 "<p>Movie : Batman" +
-                "<p>Date : " + dateSelected +
+                "<p>Date : " + booking.movieDate +
                 "<hr>" +
                 "</div>";
 

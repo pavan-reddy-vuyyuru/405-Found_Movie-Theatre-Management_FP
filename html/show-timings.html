@@ -51,9 +51,8 @@
         <main>
             <div class="main-container">
                 <div class="show_timings-container">
-                    <h1>Show timings :</h1>
-                    <p>Please select the date :</p>
-                    <input type="date" id="start" name="date-movie" value="" min="2023-08-01" max="2030-12-31" required>
+                    <h1 class="page-header">Show timings :</h1>
+
                 </div>
                 <div class="show-details-container">
                     <div class="show-list-container">
@@ -181,12 +180,5 @@
     </div>
 </body>
 <script src="../js/index.js"></script>
-<script>
-    document.getElementById("start").addEventListener("change", function() {
-        var selectedDate = [];
-        selectedDate.push(value);
-        localStorage.setItem("selectedDate", JSON.stringify(selectedDate));
-    });
-</script>
 
 </html>

@@ -24,6 +24,7 @@ function onLoaderFunc() {
 function takeData() {
     var usernameValue = document.getElementById("Username").value;
     var numSeatsValue = document.getElementById("Numseats").value;
+    var movieDateValue = document.getElementById("movieDate").value;
 
     if (usernameValue.length === 0 || numSeatsValue.length === 0) {
         alert("Please Enter your Name and Number of Seats");
@@ -64,6 +65,7 @@ function updateTextArea() {
     var numSeatsValue = document.getElementById("Numseats").value;
     var ticketPrice = 20;
     var selectedSeats = getSelectedSeats();
+    var movieDateValue = document.getElementById("movieDate").value;
 
     // Exclude previously selected seats from validation
     var previouslySelectedSeats = getPreviouslySelectedSeats();
@@ -80,6 +82,7 @@ function updateTextArea() {
 
         var allNameVals = [document.getElementById("Username").value];
         var allNumberVals = [numSeatsValue];
+        var alldateVals = [movieDateValue];
         var allSeatsVals = filteredSelectedSeats;
 
         var storedSeats = getPreviouslySelectedSeats();
@@ -96,6 +99,7 @@ function updateTextArea() {
         allBookings.push({
             name: allNameVals,
             numSeats: numSeatsValue,
+            movieDate: movieDateValue,
             seats: filteredSelectedSeats
         });
         localStorage.setItem('latestBooking', JSON.stringify(allBookings));
@@ -104,11 +108,13 @@ function updateTextArea() {
         localStorage.setItem('NumberDisplay', allNumberVals);
         localStorage.setItem('seatsDisplay', allSeatsVals);
         localStorage.setItem('costDisplay', allNumberVals * ticketPrice);
+        localStorage.setItem('dateDisplay', movieDateValue);
 
         var storedName = localStorage.getItem('nameDisplay');
         var storedNumber = localStorage.getItem('NumberDisplay');
         var storedSeats = localStorage.getItem('seatsDisplay');
         var storedCost = localStorage.getItem('costDisplay');
+        var storedDate = localStorage.getItem('dateDisplay');
 
         if (storedName !== null) {
             console.log('Name:', storedName);
@@ -125,10 +131,14 @@ function updateTextArea() {
         if (storedCost !== null) {
             console.log('Cost:', storedCost);
         }
+        if (storedDate !== null) {
+            console.log('Cost:', storedDate);
+        }
 
         document.getElementById('nameDisplay').innerHTML = allNameVals;
         document.getElementById('NumberDisplay').innerHTML = allNumberVals;
         document.getElementById('seatsDisplay').innerHTML = allSeatsVals.join(', ');
+        document.getElementById('dateDisplay').innerHTML = alldateVals;
         document.getElementById('costDisplay').innerHTML = allNumberVals * ticketPrice;
 
         let codeBlock = document.getElementById('billing-section');
