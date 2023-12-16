@@ -279,6 +279,15 @@ button:hover {
         padding: 14px 10px;
         margin-bottom: 10px;
     }
+    .form-container {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    #login-form {
+        width: 95%;
+        top: 100px;
+        margin: 30px auto;
+    }
 }
 
 
@@ -335,6 +344,15 @@ button:hover {
     .active-button {
         padding: 14px 10px;
         margin-bottom: 10px;
+    }
+    .form-container {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    #login-form {
+        width: 95%;
+        top: 100px;
+        margin: 30px auto;
     }
 }
 
