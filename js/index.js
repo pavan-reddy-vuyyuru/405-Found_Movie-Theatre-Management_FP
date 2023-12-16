@@ -2,7 +2,7 @@ registeredUser = window.localStorage.getItem("exampleLogin__firstname");
 window.addEventListener('DOMContentLoaded', displayName)
 
 if (!registeredUser) {
-    window.location.href = '../invalid-login.html';
+    window.location.href = '../index.html';
 }
 
 function displayName() {
